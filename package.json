@@ -1,0 +1,39 @@
+{
+  "name": "epickem_onm",
+  "version": "1.0.0",
+  "description": "Organiser des tournois, importer ceux de la communauté, et faire vibrer le public avec des pronostics en direct.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathisDeruywe/EPIckem_ONM.git"
+  },
+  "keywords": [],
+  "author": "mathisDeruywe, matteoSalini, NeilAyeb",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mathisDeruywe/EPIckem_ONM/issues"
+  },
+  "homepage": "https://github.com/mathisDeruywe/EPIckem_ONM#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "eslint": "^10.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.10"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
+  }
+}
