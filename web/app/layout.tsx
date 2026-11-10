@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Figtree } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Sidebar } from "@/components/layout/Sidebar";
 
 const figtree = Figtree({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -40,7 +41,8 @@ export default function RootLayout({
     >
       {/* Ajout des classes bg-background et text-foreground pour forcer l'application des couleurs */}
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        {children}
+        <Sidebar />
+        <main className="flex-1 ml-24 p-8">{children}</main>
       </body>
     </html>
   );
