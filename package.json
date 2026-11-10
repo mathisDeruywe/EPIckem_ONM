@@ -35,5 +35,10 @@
     "*.{json,css,md}": [
       "prettier --write"
     ]
-  }
+  },
+  "workspaces": [
+    "web",
+    "mobile",
+    "backend"
+  ]
 }
